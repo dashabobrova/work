@@ -4,7 +4,7 @@ import CrossSvg from "../img/Cross.svg"; // CUicon-interface-Cross
 
 const useStyles = makeStyles({
   position: "absolute",
-  minWidth: 400,
+  width: 400,
   minHeight: 210,
   borderRadius: 16,
 });
