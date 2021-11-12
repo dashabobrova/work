@@ -1,0 +1,29 @@
+//стили для попапа
+.popup{
+  &__wrapper {
+    padding: 24px;
+  }
+  &__header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    &-title {
+      font-family: Montserrat;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 0px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #272727;
+    }
+    &-cross{
+      width: 16px;
+      height: 16px;
+    }
+  }
+  &__content{
+    width: 100%;
+    margin-top: 20px;
+  }
+}
