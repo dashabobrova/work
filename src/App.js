@@ -3,6 +3,7 @@ import "./App.scss";
 import { NewPopup } from "./components/NewPopup";
 import { Button } from "@material-ui/core";
 import SwitchLabels from "./components/SwitchLabels";
+import { confirmButton } from "./components/confirmButton";
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -56,8 +57,8 @@ function App() {
               </h1>
             </div>
             <div className="settings__btns">
-              <Button onClick={togglerClickHandlerTest}>Отмена</Button>
-              <Button autoFocus>Сохранить</Button>
+              <confirmButton onClick={togglerClickHandlerTest}>Отмена</confirmButton>
+              <confirmButton autoFocus>Сохранить</confirmButton>
             </div>
           </div>
         }
