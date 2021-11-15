@@ -31,12 +31,8 @@ export const NewPopup = ({
         <div className="popup__header">
           {title && <h1 className="popup__header-title">{title}</h1>}
           {isCross && (
-            <img
-              className="popup__header-cross"
-              src={CrossSvg}
-              alt="x"
-              onClick={togglerClickHandler}
-            />
+            <p className="CUicon-interface-Cross popup__header-cross" onClick={togglerClickHandler}></p>
+           
           )}
         </div>
         <div className="popup__content">{children}</div>
