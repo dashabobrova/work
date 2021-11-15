@@ -58,23 +58,24 @@
 
 .blueBlock__main-blocks {
   width: 100%;
-  height: 85%;
+  height: 90%;
   display: flex;
 }
 
 .blueBlock__main-btns {
-  width: 100%;
-  height: 15%;
+  width: 92%;
+  height: 10%;
   background-color: pink;
+  margin: 0 auto;
 }
 
 .blueBlock__main-left {
   width: 46%;
-  height: 90%;
-  background-color: orange;
+  height: 95%;
+  /* background-color: orange; */
   margin-left: 4%;
-  margin-top: 5%;
-  margin-bottom: 10px;
+  margin-top: 24px;
+  /* margin-bottom: 10px; */
 }
 
 .blueBlock__main-right {
@@ -82,27 +83,41 @@
   height: 90%;
   background-color: rgb(140, 0, 255);
   margin-right: 4%;
-  margin-top: 5%;
+  margin-top: 24px;
 }
 
-.left__header-wallet {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 24px;
-  line-height: 32px;
-  color: #272727;
-  margin-top: 0px;
-}
-.left__header {
+.block__header {
   height: 32px;
   width: 100%;
-  background-color: red;
+  /* background-color: red; */
+  flex-direction: row;
   display: flex;
   justify-content: space-between;
 }
 
-.left__header-btn {
+.block__header-icon {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 30px;
+  color: #272727;
+  margin-top: 0px;
+  margin: 0px;
+  padding: 0px;
+  display: inline;
+  float: left;
+}
+
+.block__header-icon span {
+  margin: 0px;
+  padding: 0px;
+  line-height: 28px;
+  padding-left: 8px;
+  vertical-align: 2px;
+}
+
+.block__header-btn {
   appearance: none;
   border: 1px solid #0e46c0;
   border-radius: 16px;
@@ -115,15 +130,136 @@
   font-size: 14px;
   line-height: 18px;
   color: #0e46c0;
+  width: 45%;
+  margin-right: 12%;
 }
 
-.left__header-btn span{
-    padding-top: 35px;
+.block__header-btn span {
+  padding-top: 35px;
+  font-size: 18px;
+  position: absolute;
+  padding-top: 1px;
+}
 
+.left__main {
+  list-style-type: none;
+  margin: 0px;
+  margin-right: 8%;
+  padding: 0;
+}
+
+.left__main li {
+  margin-top: 12px;
+}
+
+.left__main li:first-child {
+  margin-top: 16px;
+}
+
+.left__main-item {
+  height: 28px;
+  width: 94%;
+  background: #f4f4f7;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 5px;
+  display: grid;
+  grid-template-columns: 27% 57% 16%;
+}
+
+.item__start {
+  text-transform: uppercase;
+  height: 28px;
+  width: 69px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 14px;
+  letter-spacing: 0.3px;
+  color: #272727;
+  padding-left: 10px;
+}
+
+.item__med {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400; //TODO: здесь 600 - на неподключенных шрифтах не видно
+  font-size: 18px;
+  line-height: 24px;
+  color: #272727;
+}
+
+.bold {
+  font-weight: 800;
+}
+
+.item__end {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: right;
+  color: #272727;
+}
+
+.item__start-withIcon {
+  height: 24px;
+  width: 73px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.withIcon__round {
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+}
+
+.withIcon__round img {
+  height: 14px;
+  width: 14px;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+.withIcon__text {
+  margin: 0px;
+  padding: 0px;
+  /* padding-left: 10px;
+  float: left; */
+}
+
+.left_switcherBlock {
+  width: 70%;
+  height: 9%;
+  margin-top: 1%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left_switcherBlock-text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #272727;
+  margin: 0px;
+  padding: 3%;
+}
+
+.block__header-select{
+  margin: 0px;
+  padding: 0px;
+}
+
+@media (max-width: 768px) {
+  .block__header-btn {
+    margin-right: 21px;
   }
-
-  
-@media (max-width: 640px) {
 }
 
 @media (max-width: 320px) {
