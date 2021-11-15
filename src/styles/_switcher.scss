@@ -1,0 +1,60 @@
+
+  //switcher
+  .toggle__input {
+    position: relative;
+    height: 25px;
+    width: 52px;
+    border-radius: 12px;
+    background-color: #a1a1a1;
+    -webkit-appearance: none;
+    outline: none;
+    transition: 0.4s;
+    cursor: pointer;
+  }
+  
+  .toggle__input:checked {
+    background: #0e46c0;
+  }
+  
+  .toggle__input::before {
+    position: absolute;
+    content: "";
+    top: 2px;
+    left: 2px;
+    height: 20px;
+    width: 20px;
+    border-radius: 0px;
+    background: #ffffff;
+    border-radius: 50%;
+    transform: scale(1.1);
+    transition: 0.4s;
+    z-index: 3;
+  }
+  
+  .toggle__input:checked::before {
+    left: calc(100% - 23px);
+  }
+  
+  .toggle {
+    position: relative;
+    display: inline;
+  }
+  
+  .toggle__text {
+    position: absolute;
+    bottom: 9px;
+    left: 9px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 14px;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    color: #ffffff;
+    width: 42px;
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+    line-height: 22px;
+  }
+  
