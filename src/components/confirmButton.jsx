@@ -1,7 +1,7 @@
 import React from 'react'
 
-export const confirmButton = ({children, ...props}) => {
+export const ConfirmButton = ({children, ...props}) => {
     return (
-        <button {...props}>{children}</button>
+        <button {...props} className="confirmButton">{children}</button>
     )
 }

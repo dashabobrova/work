@@ -3,8 +3,11 @@ import { Dialog, makeStyles } from "@material-ui/core";
 import CrossSvg from "../img/Cross.svg"; // CUicon-interface-Cross
 
 const useStyles = makeStyles({
-  position: "absolute",
-  borderRadius: 16,
+  root: {
+    position: "absolute",
+    borderRadius: 16,
+  }
+  
 });
 
 export const NewPopup = ({ title, open, content, togglerClickHandler }) => {
@@ -12,7 +15,7 @@ export const NewPopup = ({ title, open, content, togglerClickHandler }) => {
 
   return (
     <Dialog
-      classes={{ paper: classes }}
+    className={classes.root}
       open={open}
       onClose={togglerClickHandler}
     >
