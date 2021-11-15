@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.scss";
 import { ConfirmButton } from "./components/confirmButton";
+import { LongBtn } from "./components/longBtn";
 import { NewPopup } from "./components/NewPopup";
 import { Switcher } from "./components/Switcher";
 import { currency } from "./utils/currency";
@@ -22,7 +23,7 @@ function App() {
 
   const togglerClickHandlerOk = () => {
     setOpenOk(!openOk);
-  }
+  };
 
   const [checkedState, setCheckedState] = useState(
     new Array(currency.length).fill(false)
@@ -44,14 +45,13 @@ function App() {
         togglerClickHandler={togglerClickHandler}
         title="Шаблон"
         setOpen={setOpen}
-        content={
-          <p>
-            Let Google help apps determine location. This means sending
-            anonymous location data to Google, even when no apps are running.
-          </p>
-        }
-        isCross={false}
-      ></NewPopup>
+        isCross={true}
+      >
+        <p>
+          Let Google help apps determine location. This means sending anonymous
+          location data to Google, even when no apps are running.
+        </p>
+      </NewPopup>
 
       {/* Настройки */}
       <button onClick={togglerClickHandlerTest}>Настройки</button>
@@ -60,76 +60,72 @@ function App() {
         togglerClickHandler={togglerClickHandlerTest}
         title="Настройки"
         setOpen={setOpenSettings}
-        content={
-          <div>
-            <div className="settings__toggler">
-              <div className="settings__toggler-text">
-                <p>
-                  Оплачивать из кошелька, если на счету недостаточно средств
-                </p>
-              </div>
-              <div className="settings__toggler-toggler">
-                <Switcher isOn={isOn} handleToggle={() => setIsOn(!isOn)} />
-              </div>
+        isCross={true}
+      >
+        <div className="toggler">
+          <div className="settings__toggler">
+            <div className="settings__toggler-text">
+              <p>Оплачивать из кошелька, если на счету недостаточно средств</p>
             </div>
-            <div className="settings__main">
-              <h1 className="settings__main-title">
-                Балансы для оплаты и очередность
-              </h1>
-              <ul className="settings__main-list">
-                {currency.map((currency, index) => {
-                  return (
-                    <li key={index}>
-                      <div>
-                        <input
-                          type="checkbox"
-                          id={`custom-checkbox-${index}`}
-                          className="custom-checkbox"
-                          name={currency.name}
-                          value={currency.name}
-                          checked={checkedState[index]}
-                          onChange={() => handleOnChange(index)}
-                        />
-                        <label htmlFor={`custom-checkbox-${index}`}>
-                          {currency.name}
-                        </label>
-                      </div>
-                      {/* {
-                        checkedState[index] == true && <p>yes</p>
-                      } */}
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
-            <div className="settings__btns">
-              <ConfirmButton onClick={togglerClickHandlerTest}>
-                Отмена
-              </ConfirmButton>
-              <ConfirmButton onClick={togglerClickHandlerTest} autoFocus>
-                Сохранить
-              </ConfirmButton>
+            <div className="settings__toggler-toggler">
+              <Switcher isOn={isOn} handleToggle={() => setIsOn(!isOn)} />
             </div>
           </div>
-        }
-        isCross={true}
-      ></NewPopup>
+          <div className="settings__main">
+            <h1 className="settings__main-title">
+              Балансы для оплаты и очередность
+            </h1>
+            <ul className="settings__main-list">
+              {currency.map((currency, index) => {
+                return (
+                  <li key={index}>
+                    <div>
+                      <input
+                        type="checkbox"
+                        id={`custom-checkbox-${index}`}
+                        className="custom-checkbox"
+                        name={currency.name}
+                        value={currency.name}
+                        checked={checkedState[index]}
+                        onChange={() => handleOnChange(index)}
+                      />
+                      <label htmlFor={`custom-checkbox-${index}`}>
+                        {currency.name}
+                      </label>
+                    </div>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+          <div className="settings__btns">
+            <ConfirmButton onClick={togglerClickHandlerTest}>
+              Отмена
+            </ConfirmButton>
+            <ConfirmButton onClick={togglerClickHandlerTest} autoFocus>
+              Сохранить
+            </ConfirmButton>
+          </div>
+        </div>
+      </NewPopup>
 
       {/* ОК вместо крестика на закрытие */}
       <button onClick={togglerClickHandlerOk}>Ок</button>
       <NewPopup
         open={openOk}
         togglerClickHandler={togglerClickHandlerOk}
-        title="Шаблон"
+        title=""
         setOpen={setOpenOk}
-        content={
-          <p>
-            Вы подписались на сообщения о поступлении новых серий совместных
-            покупок. Как только они появятся в продаже — мы свяжемся c вами.
-          </p>
-        }
         isCross={false}
-      ></NewPopup>
+      >
+        <div className="okPopup">
+        <p className="okPopup__text">
+          Вы подписались на сообщения о поступлении новых серий совместных
+          покупок. Как только они появятся в продаже — мы свяжемся c вами.
+        </p>
+        <LongBtn onClick={togglerClickHandlerOk}>Ок</LongBtn>
+        </div>
+      </NewPopup>
     </div>
   );
 }
