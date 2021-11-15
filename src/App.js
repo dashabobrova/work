@@ -8,6 +8,7 @@ import { currency } from "./utils/currency";
 function App() {
   const [open, setOpen] = useState(false);
   const [openSettings, setOpenSettings] = useState(false);
+  const [openOk, setOpenOk] = useState(false);
 
   const [isOn, setIsOn] = useState(true);
 
@@ -18,6 +19,10 @@ function App() {
   const togglerClickHandlerTest = () => {
     setOpenSettings(!openSettings);
   };
+
+  const togglerClickHandlerOk = () => {
+    setOpenOk(!openOk);
+  }
 
   const [checkedState, setCheckedState] = useState(
     new Array(currency.length).fill(false)
@@ -30,7 +35,6 @@ function App() {
     setCheckedState(updatedCheckedState);
   };
 
-  console.log(checkedState)
   return (
     <div className="App">
       {/* самый простой вариант */}
@@ -46,6 +50,7 @@ function App() {
             anonymous location data to Google, even when no apps are running.
           </p>
         }
+        isCross={false}
       ></NewPopup>
 
       {/* Настройки */}
@@ -75,20 +80,20 @@ function App() {
                 {currency.map((currency, index) => {
                   return (
                     <li key={index}>
-                        <div>
-                          <input
-                            type="checkbox"
-                            id={`custom-checkbox-${index}`}
-                            className="custom-checkbox"
-                            name={currency.name}
-                            value={currency.name}
-                            checked={checkedState[index]}
-                            onChange={() => handleOnChange(index)}
-                          />
-                          <label htmlFor={`custom-checkbox-${index}`}>
-                            {currency.name}
-                          </label>
-                        </div>
+                      <div>
+                        <input
+                          type="checkbox"
+                          id={`custom-checkbox-${index}`}
+                          className="custom-checkbox"
+                          name={currency.name}
+                          value={currency.name}
+                          checked={checkedState[index]}
+                          onChange={() => handleOnChange(index)}
+                        />
+                        <label htmlFor={`custom-checkbox-${index}`}>
+                          {currency.name}
+                        </label>
+                      </div>
                       {/* {
                         checkedState[index] == true && <p>yes</p>
                       } */}
@@ -101,10 +106,29 @@ function App() {
               <ConfirmButton onClick={togglerClickHandlerTest}>
                 Отмена
               </ConfirmButton>
-              <ConfirmButton onClick={togglerClickHandlerTest} autoFocus>Сохранить</ConfirmButton>
+              <ConfirmButton onClick={togglerClickHandlerTest} autoFocus>
+                Сохранить
+              </ConfirmButton>
             </div>
           </div>
         }
+        isCross={true}
+      ></NewPopup>
+
+      {/* ОК вместо крестика на закрытие */}
+      <button onClick={togglerClickHandlerOk}>Ок</button>
+      <NewPopup
+        open={openOk}
+        togglerClickHandler={togglerClickHandlerOk}
+        title="Шаблон"
+        setOpen={setOpenOk}
+        content={
+          <p>
+            Вы подписались на сообщения о поступлении новых серий совместных
+            покупок. Как только они появятся в продаже — мы свяжемся c вами.
+          </p>
+        }
+        isCross={false}
       ></NewPopup>
     </div>
   );
