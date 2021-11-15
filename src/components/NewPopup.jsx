@@ -1,6 +1,5 @@
 import * as React from "react";
 import { Dialog, makeStyles } from "@material-ui/core";
-import CrossSvg from "../img/Cross.svg"; // CUicon-interface-Cross
 
 const useStyles = makeStyles({
   root: {
