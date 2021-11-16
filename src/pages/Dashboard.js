@@ -170,35 +170,40 @@ export const Dashboard = () => {
 
             <div className="blueBlock__small">
               <div className="blueBlock__small-main">
-                <div className="test">
-                {/* <div className="small__main-left">
-                  <div className="CUicon-solid_status-Lightning-alt main__left-icon"></div>
-                  <div className="main__left-title">баланс оплаты электроэнергии</div>
-                  <div className="main__left-cost">$1,305.80</div>
-                  <div className="main__left-days">45 дней</div>
-                </div>
-                <div className="small__main-right">
-                <DashboardBlueBtn className="widthtest">
-                  <div>Пополнить</div>
-                  <div className="CUicon-interface-Plus btn__icon"></div>
-                </DashboardBlueBtn>
-                <div>
-                  <div>
-                    <p>Оплата в день</p>
-                    <p>$35.20 за 596 кВт</p>
+              <div className="battery__band"></div>
+                <div className="small__main-wrapper">
+                  <div className="small__main-left">
+                    <div className="CUicon-solid_status-Lightning-alt main__left-icon"></div>
+                    <div className="main__left-title">
+                      баланс оплаты электроэнергии
+                    </div>
+                    <div className="main__left-cost">$1,305.80</div>
+                    <div className="main__left-days">45 дней</div>
                   </div>
-                  <div>
-                    <p>Оплата в день</p>
-                    <p>$35.20 за 596 кВт</p>
+                  <div className="small__main-right">
+                    <div className="main__right-big">
+                      <DashboardBlueBtn className="big__firstBtn">
+                        <div>Пополнить</div>
+                        <div className="CUicon-interface-Plus btn__icon"></div>
+                      </DashboardBlueBtn>
+                      
+                      <div className="main__right-small">
+                        <div>
+                          <p className="right__small-title">Оплата в день</p>
+                          <p className="right__small-cost">$35.20 за 596 кВт</p>
+                        </div>
+                        <div>
+                          <p className="right__small-title">Оплата в день</p>
+                          <p className="right__small-cost">$35.20 за 596 кВт</p>
+                        </div>
+                      </div>
+                      <DashboardBlueBtn>
+                        <div>Настройки</div>
+                        <div className="CUicon-interface-Settings-alt btn__icon"></div>
+                      </DashboardBlueBtn>
+                    </div>
                   </div>
-                  <div></div>
                 </div>
-                <DashboardBlueBtn>
-                  <div>Вывести</div>
-                  <div className="CUicon-interface-Settings-alt btn__icon"></div>
-                </DashboardBlueBtn>
-                </div> */}
-              </div>
               </div>
               <div className="blueBlock__small-battery"></div>
             </div>
