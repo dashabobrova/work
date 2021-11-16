@@ -78,7 +78,7 @@ export const SelectComponent = ({ value, handleChange, items }) => {
         disableUnderline
         /* IconComponent={ExpandMoreRoundedIcon} */
         IconComponent={() => (
-            <span className="CUicon-interface-Caret-down test"></span>
+            <span className="CUicon-interface-Caret-down select__icon"></span>
           )}
         MenuProps={menuProps}
         classes={{
