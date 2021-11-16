@@ -4,12 +4,18 @@ import BTC from "../img/BTC.svg";
 import LTC from "../img/LTC.svg";
 import ETH from "../img/ETH.svg";
 import USDT from "../img/USDT.svg";
-import {
-  Container
-} from "@material-ui/core";
+import { Container } from "@material-ui/core";
+import { DashboardBlueBtn } from "../components/DashboardBlueBtn";
+import { SelectComponent } from "../components/SelectComponent";
 
+//TODO: https://mui.com/components/selects/
 
 export const Dashboard = () => {
+  const [val, setVal] = React.useState(7);
+
+  const handleChange = (event) => {
+    setVal(event.target.value);
+  };
 
   return (
     <Container>
@@ -24,8 +30,8 @@ export const Dashboard = () => {
                       <span>Кошелек</span>
                     </p>
                     <button className="block__header-btn ">
-                      Перейти в раздел
-                      <span className="CUicon-solid_interface-Caret-right"></span>
+                      <div>Перейти в раздел</div>
+                      <div className="CUicon-solid_interface-Caret-right btn__arrow"></div>
                     </button>
                   </div>
                   <ul className="left__main">
@@ -97,16 +103,49 @@ export const Dashboard = () => {
                     <p className="CUicon-general-Pulse block__header-icon">
                       <span>Статистика</span>
                     </p>
-              
-                    
+                    {/*    <select class="header__select">
+                      <option>В криптовалюте</option>
+                      <option>В фиате</option>
+                    </select> */}
+                    <SelectComponent
+                      value={val}
+                      handleChange={handleChange}
+                      items={[
+                        { key: "В криптовалюте", value: 7 },
+                        { key: "В USD", value: 28 },
+                      ]}
+                    />
+                  </div>
+                  <div className="right__items">
+                    <div className="right__items-item small">
+                      <div className="small__wrapper">
+                        <div className="CUicon-general-Hashrate"></div>
+                        <div>активная мощность майнинга</div>
+                        <div>3 280,15 TH/s</div>
+                        <div className="CUicon-general-Timer"></div>
+                        <div>
+                          В ожидании запуска<span>12 TH/s</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="right__items-item big"></div>
                   </div>
                 </div>
               </div>
 
               <div className="blueBlock__main-btns">
-                <button>btn</button>
-                <button>btn</button>
-                <button>btn</button>
+                <DashboardBlueBtn>
+                  <div>Пополнить</div>
+                  <div className="CUicon-solid_interface-Plus btn__icon"></div>
+                </DashboardBlueBtn>
+                <DashboardBlueBtn>
+                  <div>Вывести</div>
+                  <div className="CUicon-solid_files-Upload btn__icon"></div>
+                </DashboardBlueBtn>
+                <DashboardBlueBtn>
+                  <div>Обменять</div>
+                  <div className="CUicon-interface-Exchange btn__icon"></div>
+                </DashboardBlueBtn>
               </div>
             </div>
 

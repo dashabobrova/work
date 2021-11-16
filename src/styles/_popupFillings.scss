@@ -1,155 +1,154 @@
+//внутренности попапов
+.toggler {
+  width: 400px;
+}
 
-  //внутренности попапов
-  .toggler {
-    width: 400px;
-  }
-  
-  .settings__toggler {
-    background: #f4f4f7;
-    border-radius: 16px;
-    padding: 12px 20px 12px 12px;
-    display: flex;
-    justify-content: space-between;
-    width: 352px;
-  }
-  
-  .settings__toggler-text {
-    width: 77%;
-  }
-  
-  .settings__toggler-toggler {
-    position: relative;
-    margin-top: 18px;
-  }
-  
-  .settings__toggler-text p {
-    font-family: Montserrat;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 18px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #272727;
-  }
-  
-  .settings__main {
-    margin-top: 24px;
-  }
-  .settings__main-title {
-    text-transform: uppercase;
-    font-family: Montserrat;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 16px;
-    letter-spacing: 0.5px;
-    text-align: left;
-    color: #272727;
-  }
-  
-  .settings__btns {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .settings__main-list {
-    padding-left: 0;
-    list-style-type: none;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 18px;
-    color: #272727;
-  }
-  
-  .custom-checkbox {
-    position: absolute;
-    z-index: -1;
-    opacity: 0;
-  }
-  
-  .custom-checkbox + label {
-    display: inline-flex;
-    align-items: center;
-    user-select: none;
-  }
-  .custom-checkbox + label::before {
-    content: "";
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    flex-shrink: 0;
-    flex-grow: 0;
-    border: 1px solid #0e46c0;
-    border-radius: 8px;
-    margin-right: 0.5em;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 50% 50%;
-  }
-  
-  .custom-checkbox:checked + label::before {
-    background-color: #0e46c0;
-    background-image: url("../img/checkMark.svg");
-  }
-  
-  .confirmButton {
-    width: 170px;
-    height: 42px;
-    border-radius: 24px;
-    border: 1px solid #0e46c0;
-    font-family: Montserrat;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 18px;
-    letter-spacing: 0em;
-    text-align: center;
-    color: #0e46c0;
-    cursor: pointer;
-    background-color: transparent;
-  }
-  
-  .confirmButton:hover {
-    background-color: #0e46c0;
-    color: #ffffff;
-  }
-  
-  .longButton {
-    width: 100%;
-    height: 42px;
-    border: none;
-    background-color: #0e46c0;
-    text-align: center;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 18px;
-    color: #ffffff;
-    border-radius: 24px;
-  }
-  
-  .okPopup {
-    width: 400px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 22px;
-    color: #000000;
-    margin-top: 0px !important;
-  }
-  
-  .okPopup__text{
-    font-family: Montserrat;
+.settings__toggler {
+  background: #f4f4f7;
+  border-radius: 16px;
+  padding: 12px 20px 12px 12px;
+  display: flex;
+  justify-content: space-between;
+  width: 352px;
+}
+
+.settings__toggler-text {
+  width: 77%;
+}
+
+.settings__toggler-toggler {
+  position: relative;
+  margin-top: 18px;
+}
+
+.settings__toggler-text p {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #272727;
+}
+
+.settings__main {
+  margin-top: 24px;
+}
+.settings__main-title {
+  text-transform: uppercase;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #272727;
+}
+
+.settings__btns {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.settings__main-list {
+  padding-left: 0;
+  list-style-type: none;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #272727;
+}
+
+.custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.custom-checkbox + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.custom-checkbox + label::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #0e46c0;
+  border-radius: 8px;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+.custom-checkbox:checked + label::before {
+  background-color: #0e46c0;
+  background-image: url("../img/checkMark.svg");
+}
+
+.confirmButton {
+  width: 170px;
+  height: 42px;
+  border-radius: 24px;
+  border: 1px solid #0e46c0;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #0e46c0;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.confirmButton:hover {
+  background-color: #0e46c0;
+  color: #ffffff;
+}
+
+.longButton {
+  width: 100%;
+  height: 42px;
+  border: none;
+  background-color: #0e46c0;
+  text-align: center;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  border-radius: 24px;
+}
+
+.okPopup {
+  width: 400px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+  margin-top: 0px !important;
+}
+
+.okPopup__text {
+  font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
   margin-top: 0px;
   color: #000000;
-  }
+}

@@ -1,4 +1,4 @@
-import "./styles/main.scss"
+import "./styles/main.scss";
 import { Route, Routes } from "react-router-dom";
 import { PopupsPage } from "./pages/PopupsPage";
 import { HomePage } from "./pages/HomePage";
