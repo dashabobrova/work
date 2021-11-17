@@ -209,16 +209,26 @@ export const Dashboard = () => {
                         <p className="right__small-cost">$35.20 за 596 кВт</p>
                       </div>
                       <div>
-                        <p className="right__small-title">Оплата в день</p>
-                        <p className="right__small-cost">$35.20 за 596 кВт</p>
+                        <p className="right__small-title">баланса хватит на</p>
+                        <p className="right__small-cost">37 дней</p>
                       </div>
                     </div>
-                    <DashboardBlueBtn>
+                    <div className="main__btn-goTo">
+                    <DashboardBlueBtn >
+                    <div className="main__btns-wrapper">
+                      <div>Перейти в раздел</div>
+                      <div className="CUicon-solid_interface-Caret-right btn__icon"></div>
+                    </div>
+                    </DashboardBlueBtn>
+                    </div>
+                    <div className="main__btn-settings">
+                    <DashboardBlueBtn >
                     <div className="main__btns-wrapper">
                       <div>Настройки</div>
                       <div className="CUicon-interface-Settings-alt btn__icon"></div>
                     </div>
                     </DashboardBlueBtn>
+                    </div>
                   </div>
                 </div>
               </div>
