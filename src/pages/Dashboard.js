@@ -16,7 +16,7 @@ export const Dashboard = () => {
   };
 
   return (
-    <Container maxWidth="lg">
+    <div className="container">
       <div className="dashboard">
         <div className="blueBlock">
           <div className="blueBlock__content">
@@ -210,6 +210,6 @@ export const Dashboard = () => {
           </div>
         </div>
       </div>
-    </Container>
+    </div>
   );
 };
