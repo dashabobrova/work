@@ -16,7 +16,7 @@ export const Dashboard = () => {
   };
 
   return (
-    <Container>
+    <Container maxWidth="lg">
       <div className="dashboard">
         <div className="blueBlock">
           <div className="blueBlock__content">
