@@ -4,7 +4,6 @@ import BTC from "../img/BTC.svg";
 import LTC from "../img/LTC.svg";
 import ETH from "../img/ETH.svg";
 import USDT from "../img/USDT.svg";
-import { Container } from "@material-ui/core";
 import { DashboardBlueBtn } from "../components/DashboardBlueBtn";
 import { SelectComponent } from "../components/SelectComponent";
 
@@ -97,8 +96,28 @@ export const Dashboard = () => {
                           Скрыть пустые балансы
                         </p>
                       </div>
+                      <div className="blueBlock__main-btns">
+                    <DashboardBlueBtn>
+                      <div className="main__btns-wrapper">
+                      <div>Пополнить</div>
+                      <div className="CUicon-solid_interface-Plus btn__icon"></div>
+                      </div>
+                    </DashboardBlueBtn>
+                    <DashboardBlueBtn>
+                    <div className="main__btns-wrapper">
+                      <div>Вывести</div>
+                      <div className="CUicon-solid_files-Upload btn__icon"></div>
                     </div>
-                    <div className="blueBlock__main-right">
+                    </DashboardBlueBtn>
+                    <DashboardBlueBtn>
+                    <div className="main__btns-wrapper">
+                      <div>Обменять</div>
+                      <div className="CUicon-interface-Exchange btn__icon"></div>
+                    </div>
+                    </DashboardBlueBtn>
+                  </div>
+                    </div>
+                     <div className="blueBlock__main-right">
                       <div className="block__header">
                         <p className="CUicon-general-Pulse block__header-icon">
                           <span>Статистика</span>
@@ -155,28 +174,9 @@ export const Dashboard = () => {
                           </div>
                         </div>
                       </div>
-                    </div>
+                    </div> 
                   </div>
-                  <div className="blueBlock__main-btns">
-                    <DashboardBlueBtn>
-                      <div className="main__btns-wrapper">
-                      <div>Пополнить</div>
-                      <div className="CUicon-solid_interface-Plus btn__icon"></div>
-                      </div>
-                    </DashboardBlueBtn>
-                    <DashboardBlueBtn>
-                    <div className="main__btns-wrapper">
-                      <div>Вывести</div>
-                      <div className="CUicon-solid_files-Upload btn__icon"></div>
-                    </div>
-                    </DashboardBlueBtn>
-                    <DashboardBlueBtn>
-                    <div className="main__btns-wrapper">
-                      <div>Обменять</div>
-                      <div className="CUicon-interface-Exchange btn__icon"></div>
-                    </div>
-                    </DashboardBlueBtn>
-                  </div>
+                  
                 </div>
               </div>
             </div>

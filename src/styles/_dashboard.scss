@@ -38,6 +38,7 @@
   position: relative;
   height: 64px;
   max-width: 1107px;
+  display: block;
 }
 
 .blueBlock__small-battery {
@@ -175,7 +176,7 @@
 
 .left__main-item {
   height: 28px;
-  width: 90%;
+  width: 92%;
   background: #f4f4f7;
   border: none;
   border-radius: 20px;
@@ -223,10 +224,9 @@
 
 .item__start-withIcon {
   height: 24px;
-  width: 73px;
+  width: 63px;
   border-radius: 12px;
   display: flex;
-  justify-content: space-around;
 }
 
 .withIcon__round {
@@ -245,6 +245,9 @@
 .withIcon__text {
   margin: 0px;
   padding: 0px;
+  padding-left: 3px;
+  font-size: 12px;
+  line-height: 24px;
 }
 
 .left_switcherBlock {
@@ -322,6 +325,7 @@
 
 .small {
   height: 64px;
+  width: 100%;
 }
 
 .small__wrapper {
@@ -347,8 +351,8 @@
   display: flex;
   justify-content: space-between;
   position: absolute;
-  top: 24px;
-  left: 24px;
+  top: 20%;
+  left: 23px;
 }
 .big__item {
   height: 100%;
@@ -595,6 +599,7 @@
   .small__wrapper {
     margin-left: 16px;
     margin-right: 16px;
+    padding: 10px 10px;
     grid-template-columns: 10% 22% 34% 10% 24%;
   }
 
@@ -603,12 +608,8 @@
     line-height: 24px;
   }
 
-  .small__wrapper {
-    padding: 10px 10px;
-  }
-
   .big__item-first {
-    width: 47%;
+    width: 48%;
   }
 
   .big__item-sec {
@@ -705,7 +706,7 @@
   .small__wrapper {
     margin: 0 auto;
     padding: 15px 25px;
-    grid-template-columns: 10% 40% 10% 12% 30%;
+    grid-template-columns: 9% 42% 9% 12% 30%;
     grid-template-rows: auto;
 
     grid-template-areas:
@@ -724,7 +725,6 @@
   .battery__band {
     display: none;
   }
-
 
   .main__left-days {
     width: 49px;
@@ -747,7 +747,7 @@
   .small__main-left {
     width: 45%;
     height: 100%;
-   /*  background-color: green; */
+    /*  background-color: green; */
     display: flex;
     justify-content: space-between;
     /* margin-top: 8px; */
@@ -759,7 +759,7 @@
     width: 105px;
     margin-left: 15px;
   }
-  
+
   .main__left-icon {
     display: none;
   }
@@ -770,15 +770,7 @@
   .small__main-wrapper {
     margin-top: 2%;
   }
-
 }
-
-//TODO:
-//1) поменялось много шрифтов
-//2) изменить ширину левого(желтого) блока
-
-//мб поправить проценты из-за изменения шрифтов
-//грид перестроен уже на 980
 
 @media (max-width: 768px) {
   .container {
@@ -805,12 +797,8 @@
     margin: 0px;
     padding: 0px;
     line-height: 28px;
-    padding-left: 8px;
+    padding-left: 3px;
     vertical-align: 2px;
-  }
-
-  .blueBlock__main-left {
-    width: 342px;
   }
 
   .item__med {
@@ -829,8 +817,13 @@
     margin-top: 7%;
   }
 
+  .blueBlock__main-left {
+    max-width: 342px;
+  }
+
   .blueBlock__main-right {
     margin-left: 20px;
+    width: 100%;
   }
 
   .top__text {
@@ -848,11 +841,19 @@
     padding: 12px 12px;
   }
 
-  .left_switcherBlock{
+  .left_switcherBlock {
     width: 75%;
   }
 }
 
-@media (max-width: 640px){}
+//TODO: лишний фон на биткоине и тд
+//TODO:
+//уменьшить размеры текста как на мобилке(?)
+//убрать батарейку
+@media (max-width: 690px) {
+ 
 
-@media (max-width: 480px){}
+}
+
+@media (max-width: 480px) {
+}
