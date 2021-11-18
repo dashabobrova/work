@@ -2,88 +2,115 @@ import { FormControl, makeStyles, MenuItem, Select } from "@material-ui/core";
 import React from "react";
 
 const useStyles = makeStyles(() => ({
-    formControl: {
-      "& .MuiInputBase-root": {
-        color: "#272727",
-        fontSize: "12px",
-        fontWeight: 500,
-        lineHeight: "16px",
-        backgroundColor: "#F4F4F7",
-        border: "none",
-        borderRadius: "24px",
-        minWidth: "151px",
-        justifyContent: "center"
-      },
-      "& .MuiSelect-select.MuiSelect-select": {
-        paddingRight: "0px"
-      }
+  formControl: {
+    width: "100%",
+    "& .MuiInputBase-root": {
+      color: "#272727",
+      fontSize: "12px",
+      fontWeight: 500,
+      lineHeight: "16px",
+      backgroundColor: "#F4F4F7",
+      border: "none",
+      fontFamily: "Montserrat",
+      borderRadius: "24px",
+      minWidth: "100%",
+      height: "32px",
+      justifyContent: "center",
     },
-    select: {
-      width: "auto",
-      "&:focus": {
-        backgroundColor: "#F4F4F7"
-      }
+    "& .MuiSelect-select.MuiSelect-select": {
+      //paddingRight: "0px",
     },
-    paper: {
-      borderRadius: 16,
-      marginTop: 8,
-      marginLeft: 8,
+  },
+  select: {
+    width: "auto",
+    backgroundColor: "red",
+    paddingLeft: "12px",
+    //paddingRight: "8px !important",
+    paddingRight: "29px !important",
+    borderRadius: "16px",
+    position: "relative",
+    "&:focus": {
+      backgroundColor: "#F4F4F7",
     },
-    list: {
-      paddingTop: 0,
-      paddingBottom: 0,
-      width: "151px",
-      "& li": {
-        fontWeight: 200,
-        paddingTop: 8,
-        paddingBottom: 8,
-        fontSize: "12px",
-        "&:hover": {
-            fontWeight: 900,
-        }
-      },
-      "& li.Mui-selected": {
-        fontWeight: 'bold',
-        backgroundColor: 'white'
-      },
-      "& li.Mui-selected:hover": {
-        background: "white"
-      }
+    "&::after": {
+      content: "",
     }
-  }));
+  },
+
+  paper: {
+    borderRadius: 16,
+    marginTop: "16px",
+    //marginLeft: "16px",
+    marginRight: "0px",
+    paddingRight: "0px",
+    margin: "0 auto",
+    //width: "100%",
+    width: '151px',
+    '@media (max-width: 699px)' : {
+      width: '100%'
+    }
+    
+  },
+  list: {
+    paddingTop: 0,
+    paddingBottom: 0,
+    width: "100%",
+    
+    //paddingRight: "5px",
+    "& li": {
+      fontFamily: "Montserrat",
+      fontWeight: 200,
+      paddingTop: 8,
+      paddingBottom: 8,
+      fontSize: "12px",
+      width: "100%",
+      
+      "&:hover": {
+        fontWeight: 900,
+      },
+    },
+    "& li.Mui-selected": {
+      fontWeight: "bold",
+      backgroundColor: "white",
+    },
+    "& li.Mui-selected:hover": {
+      background: "white",
+    },
+  },
+}));
 
 export const SelectComponent = ({ value, handleChange, items }) => {
   const classes = useStyles();
   const menuProps = {
     classes: {
       list: classes.list,
-      paper: classes.paper
+      paper: classes.paper,
     },
     anchorOrigin: {
       vertical: "bottom",
-      horizontal: "center"
+      horizontal: "center",
     },
     transformOrigin: {
       vertical: "top",
-      horizontal: "center"
+      horizontal: "center",
     },
-    getContentAnchorEl: null
+    getContentAnchorEl: null,
   };
 
   return (
     <FormControl className={classes.formControl}>
-      <Select
+      <Select 
+
         value={value}
         onChange={handleChange}
         disableUnderline
-        /* IconComponent={ExpandMoreRoundedIcon} */
         IconComponent={() => (
-            <span className="CUicon-interface-Caret-down select__icon"></span>
-          )}
+          <span className="CUicon-interface-Caret-down select__icon"></span>
+        )}
         MenuProps={menuProps}
         classes={{
           select: classes.select,
-          icon: classes.selectIcon
+          icon: classes.selectIcon,
         }}
       >
         {items.map((item) => (
