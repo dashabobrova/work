@@ -142,6 +142,7 @@ body {
   height: 100%;
   background-color: orange;
   margin: 0 auto;
+  border-radius: 16px;
 }
 
 .block__header {
@@ -299,7 +300,7 @@ body {
 .right__items {
   width: 100%;
   height: 100%;
-  background-color: green;
+  background-color: rgb(155, 211, 155);
   margin-top: 20px;
 }
 
@@ -401,15 +402,14 @@ body {
 }
 
 .select__icon {
-/* position: absolute; */
+  /* position: absolute; */
   color: #0e46c0;
   width: 8px;
   height: 4px;
   margin-top: -5px;
-position: absolute;
-margin-left: 108px;
+  position: absolute;
+  margin-left: 108px;
 }
-
 
 @media (max-width: 1040px) {
   .item__speed {
@@ -533,7 +533,7 @@ margin-left: 108px;
     font-size: 18px;
     line-height: 24px;
   }
-  
+
   .big__leftContent-text span {
     display: block;
   }
@@ -661,8 +661,6 @@ margin-left: 108px;
     padding: 0px 12px;
   }
 
-
-
   .dashboardBlueBtn:not(:first-child) {
     margin-top: 19px; //TODO: не могу посмотреть на макете
   }
@@ -680,22 +678,75 @@ margin-left: 108px;
     height: 100%;
   }
 
-
-.small__wrapper{
-    display: block;
-}
-
-.small__wrapper{
+  .right__items-item {
     background: none;
-}
+  }
 
-/* .right-children {
+  .small__wrapper {
+    display: block;
+  }
 
-    padding-left: 16px;
-    padding-right: 12px;
-}
- */
+  .lefttext {
+    max-width: none;
+  }
 
+  .big__wrapper {
+    display: block;
+  }
+
+  .big__leftContent-text span {
+    display: inline;
+  }
+
+  .item__speed-positionGrid {
+    margin-top: 0px; //TODO
+    padding-left: 0px;
+  }
+
+  .righttext-span {
+    margin-left: -21px; //TODO:
+  }
+
+  .right__items-item {
+    background-color: rgb(255, 255, 255);
+    margin-top: 0px;
+  }
+
+  .item__speed {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+  }
+
+  .righttext {
+    margin-top: 13px;
+  }
+
+  .right__items-item {
+    margin-top: 13px;
+  }
+
+  .big__leftContent-wrapper {
+    margin-top: 13px;
+  }
+
+  .block__header-select {
+    margin-top: 12px;
+  }
+
+  .right__items {
+    margin-top: 12px;
+  }
+
+  //убирает отступы
+  .innerChildren {
+    margin-bottom: 0px;
+  }
+
+  .blueBlock__main-btns {
+    padding-bottom: 16px;
+    border-radius: 16px;
+  }
 }
 
 @media (max-width: 480px) {

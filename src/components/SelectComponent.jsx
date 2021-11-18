@@ -4,6 +4,7 @@ import React from "react";
 const useStyles = makeStyles(() => ({
   formControl: {
     width: "100%",
+    borderRadius: "24px",
     "& .MuiInputBase-root": {
       color: "#272727",
       fontSize: "12px",
@@ -23,23 +24,19 @@ const useStyles = makeStyles(() => ({
   },
   select: {
     width: "auto",
-    backgroundColor: "red",
     paddingLeft: "12px",
-    //paddingRight: "8px !important",
     paddingRight: "29px !important",
     borderRadius: "16px",
     position: "relative",
     "&:focus": {
       backgroundColor: "#F4F4F7",
-    },
-    "&::after": {
-      content: "",
+      borderRadius: "24px",
     }
   },
 
   paper: {
     borderRadius: 16,
-    marginTop: "16px",
+    marginTop: "8px",
     //marginLeft: "16px",
     marginRight: "0px",
     paddingRight: "0px",
