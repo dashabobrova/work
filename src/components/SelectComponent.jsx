@@ -3,8 +3,11 @@ import React from "react";
 
 const useStyles = makeStyles(() => ({
   formControl: {
-    width: "100%",
+    width: "151px",
     borderRadius: "24px",
+    '@media (max-width: 699px)' : {
+      width: "100% !important",
+    },
     "& .MuiInputBase-root": {
       color: "#272727",
       fontSize: "12px",
@@ -38,11 +41,9 @@ const useStyles = makeStyles(() => ({
   paper: {
     borderRadius: 16,
     marginTop: "8px",
-    //marginLeft: "16px",
     marginRight: "0px",
     paddingRight: "0px",
     margin: "0 auto",
-    //width: "100%",
     width: '151px',
     '@media (max-width: 699px)' : {
       width: '100%'
@@ -53,8 +54,6 @@ const useStyles = makeStyles(() => ({
     paddingTop: 0,
     paddingBottom: 0,
     width: "100%",
-    
-    //paddingRight: "5px",
     "& li": {
       fontFamily: "Montserrat",
       fontWeight: 200,

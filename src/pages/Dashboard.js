@@ -14,6 +14,8 @@ export const Dashboard = () => {
   };
 
   return (
+    <div>
+       
     <div class="dashboard">
       <div class="blueBlock">
         <div class="blueBlock__content">
@@ -82,7 +84,9 @@ export const Dashboard = () => {
                             <div className="withIcon__round green">
                               <img src={USDT} alt="USDT" />
                             </div>
-                            <p className="withIcon__text">USDT</p>
+                            <div className="withIcon__text">
+                            <p >USDT</p>
+                            </div>
                           </div>
                           <div className="item__med">370.32434332 USDT</div>
                           <div className="item__end">≈ $370</div>
@@ -251,6 +255,8 @@ export const Dashboard = () => {
           </div>
         </div>
       </div>
+    </div>
+    <div className="importantUserEvents"></div>
     </div>
   );
 };

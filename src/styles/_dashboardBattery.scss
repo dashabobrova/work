@@ -1,3 +1,9 @@
+.importantUserEvents{
+    width: 500px;
+    height: 500px;
+    background-color: red;
+}
+
 .blueBlock__small {
   margin: 0 auto;
   margin-top: 24px;
@@ -80,7 +86,8 @@
 }
 
 .main__left-band {
-  background-color: #a2a2a2;
+    border-left: 1px solid#A2A2A2;
+
   height: 64px;
   width: 1px;
   margin-left: 32px;
@@ -224,6 +231,8 @@
 }
 
 }
+
+
 
 //тут исчезает
 @media (max-width: 699px) {

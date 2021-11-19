@@ -87,14 +87,15 @@ body {
 }
 
 .blueBlock__content {
-  position: absolute;
+  position: relative; //TODO: должно быть relative, чтобы разместить под
   width: 100%;
   background-color: #0e46c0;
 }
 
 .blueBlock__main {
   padding: 0 25px;
-  margin-bottom: 32px;
+  padding-bottom: 32px;
+  padding-top: 32px;
 }
 
 .blueBlock__main-parent {
@@ -102,7 +103,7 @@ body {
   border-radius: 20px;
   height: 74%;
   width: 100%;
-  margin-top: 32px;
+  //margin-top: 32px;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -189,8 +190,8 @@ body {
   border: none;
   border-radius: 20px;
   padding: 8px 14px;
-  display: grid;
-  grid-template-columns: 26% 55% 19%;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -234,30 +235,33 @@ body {
 
 .item__start-withIcon {
   height: 24px;
-  width: 63px;
+  width: 73px;
   border-radius: 12px;
   display: flex;
+  align-items: center;
+  font-size: 12px;
+  line-height: 24px;
 }
 
 .withIcon__round {
   height: 24px;
   width: 24px;
   border-radius: 50%;
+  display: flex;
+  align-items: center;
 }
 
 .withIcon__round img {
   height: 14px;
   width: 14px;
   padding-left: 5px;
-  padding-top: 5px;
+  padding-right: 6px;
+  
 }
 
 .withIcon__text {
-  margin: 0px;
-  padding: 0px;
-  padding-left: 3px;
-  font-size: 12px;
-  line-height: 24px;
+    width: 100%;
+    text-align: center;
 }
 
 .left_switcherBlock {
@@ -433,7 +437,8 @@ body {
 
   .blueBlock__main {
     padding: 0 16px;
-    margin-bottom: 24px;
+    padding-bottom: 24px;
+    padding-top: 24px;
   }
   .blueBlock__main-parent {
     max-width: 704px;
@@ -468,7 +473,6 @@ body {
     line-height: 24px;
     font-weight: 500;
     position: absolute;
-    margin-top: 2px;
   }
 
   .lefttext {
