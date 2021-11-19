@@ -318,7 +318,7 @@ export const Dashboard = () => {
                   </div>
                 </div>
                 <div>
-                  <div className="item__end blue">
+                  <div className="item__end blueEnd">
                     <p className="CUicon-comm-Envelope item__end-icon"></p>
                     <p className="item__end-text">отправить еще раз</p>
                   </div>
@@ -337,7 +337,7 @@ export const Dashboard = () => {
                   </div>
                 </div>
                 <div>
-                  <div className="item__end blue">
+                  <div className="item__end blueEnd">
                     <p className="CUicon-files-File-user item__end-icon"></p>
                     <p className="item__end-text">Верификация</p>
                   </div>
