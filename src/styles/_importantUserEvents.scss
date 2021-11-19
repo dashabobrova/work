@@ -61,6 +61,7 @@
   line-height: 18px;
   color: #272727;
   padding-left: 16px;
+ 
 }
 
 .item__end {
@@ -82,24 +83,51 @@
 .yellow {
   background: #fff6d9;
   color: #f0b90b;
+  padding-right: 8px;
 }
 
-.blue{
+.blue {
   background: inherit;
-  color: #0E46C0;
+  color: #0e46c0;
 }
-.item__end-icon{
+.item__end-icon {
   padding-left: 9px;
   padding-right: 5px;
 }
 
-.item__end-text{
-  padding-right: 8px;
-}
+/* .item__end-text {
+  
+} */
 
-.item__firstgroup{
+.item__firstgroup {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   height: 100%;
 }
+
+@media (max-width: 980px) {
+  .item__med {
+    font-size: 10px;
+    line-height: 14px;
+  }
+
+  .item__left {
+    width: 136px;
+  }
+  .item__end-icon {
+    padding-right: 3px;
+  }
+
+  .item__med {
+    padding-left: 8px;
+    max-width: 425px;
+  }
+
+  .item__end-text {
+    padding-right: 0px;
+  }
+}
+
+//уже мобилка
+@media (max-width: 699px){}

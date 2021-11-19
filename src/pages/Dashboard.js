@@ -16,14 +16,14 @@ export const Dashboard = () => {
 
   return (
     <div>
-      <div class="dashboard">
-        <div class="blueBlock">
-          <div class="blueBlock__content">
-            <div class="container">
-              <div class="blueBlock__main">
-                <div class="blueBlock__main-parent">
-                  <div class="blueBlock__main-children left-children">
-                    <div class="innerChildren">
+      <div className="dashboard">
+        <div className="blueBlock">
+          <div className="blueBlock__content">
+            <div className="container">
+              <div className="blueBlock__main">
+                <div className="blueBlock__main-parent">
+                  <div className="blueBlock__main-children left-children">
+                    <div className="innerChildren">
                       <div className="block__header">
                         <p className="CUicon-solid_general-Wallet block__header-icon">
                           <span>Кошелек</span>
@@ -119,8 +119,8 @@ export const Dashboard = () => {
                       </div>
                     </div>
                   </div>
-                  <div class="blueBlock__main-children right-children">
-                    <div class="innerChildren">
+                  <div className="blueBlock__main-children right-children">
+                    <div className="innerChildren">
                       <div className="block__header right-header">
                         <p className="CUicon-general-Pulse block__header-icon">
                           <span>Статистика</span>
@@ -270,17 +270,17 @@ export const Dashboard = () => {
             <li>
               <div className="importantUserEvents__list-item">
                 <div className="item__firstgroup">
-                  <div class="item__left">
+                  <div className="item__left">
                     <p className="CUicon-files-Upload item__left-icon"></p>
                     <p className="item__left-text">Вывод средств</p>
                   </div>
-                  <div class="item__med">
+                  <div className="item__med">
                     Вывод 0.0050000 BTC на кошелёк
                     1njrRcKQtfjjLuQxFYCeMXcth77m5TAYo
                   </div>
                 </div>
                 <div>
-                  <div class="item__end yellow">
+                  <div className="item__end yellow">
                     <p className="CUicon-solid_general-Clock item__end-icon"></p>
                     <p className="item__end-text">подтвержден 2/4</p>
                   </div>
@@ -290,16 +290,16 @@ export const Dashboard = () => {
             <li>
               <div className="importantUserEvents__list-item">
                 <div className="item__firstgroup">
-                  <div class="item__left">
+                  <div className="item__left">
                     <p className="CUicon-solid_interface-Plus item__left-icon"></p>
                     <p className="item__left-text">Пополнение</p>
                   </div>
-                  <div class="item__med">
+                  <div className="item__med">
                   Пополнение баланса BTC на 0.00003000 BTC
                   </div>
                 </div>
                 <div>
-                  <div class="item__end yellow">
+                  <div className="item__end yellow">
                     <p className="CUicon-solid_general-Clock item__end-icon"></p>
                     <p className="item__end-text">подтвержден 0/4</p>
                   </div>
@@ -309,16 +309,16 @@ export const Dashboard = () => {
             <li>
               <div className="importantUserEvents__list-item">
                 <div className="item__firstgroup">
-                  <div class="item__left">
+                  <div className="item__left">
                     <p className=" CUicon-files-File-user item__left-icon"></p>
                     <p className="item__left-text">Профиль</p>
                   </div>
-                  <div class="item__med">
+                  <div className="item__med">
                   Электронная почта не подтверждена. Пройдите по ссылке из отправленного вам письма.
                   </div>
                 </div>
                 <div>
-                  <div class="item__end blue">
+                  <div className="item__end blue">
                     <p className="CUicon-comm-Envelope item__end-icon"></p>
                     <p className="item__end-text">отправить еще раз</p>
                   </div>
@@ -328,16 +328,16 @@ export const Dashboard = () => {
             <li>
               <div className="importantUserEvents__list-item">
                 <div className="item__firstgroup">
-                  <div class="item__left">
+                  <div className="item__left">
                     <p className=" CUicon-files-File-user item__left-icon"></p>
                     <p className="item__left-text">Профиль</p>
                   </div>
-                  <div class="item__med">
+                  <div className="item__med">
                   Пройдите верификацию, чтобы увеличить лимит на операции
                   </div>
                 </div>
                 <div>
-                  <div class="item__end blue">
+                  <div className="item__end blue">
                     <p className="CUicon-files-File-user item__end-icon"></p>
                     <p className="item__end-text">Верификация</p>
                   </div>
