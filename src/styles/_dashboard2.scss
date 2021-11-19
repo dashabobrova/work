@@ -5,6 +5,7 @@
 body {
   font-family: Montserrat;
   //background-color: #0e46c0;
+  //background-color: #E5E5E5;
 }
 
 .iconspan {
@@ -526,7 +527,8 @@ body {
   }
 }
 
-//690Ю тк текст 3 280,15 TH/s пескакивает на 3 строки
+//699 тк текст 3 280,15 TH/s пескакивает на 3 строки
+//уже мобилка
 @media (max-width: 699px) {
   .blueBlock__main-parent {
     max-width: 1080px;

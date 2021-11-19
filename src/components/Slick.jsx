@@ -3,11 +3,10 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-
 export class SliderExample extends React.Component {
   render() {
     let settings = {
-        className: "slider variable-width",
+      className: "slider variable-width",
       dots: false,
       arrows: false,
       infinite: false,
@@ -27,7 +26,6 @@ export class SliderExample extends React.Component {
             rows: 2,
             slidesToShow: 4,
             slidesToScroll: 1,
-            
           },
         },
         {
@@ -44,17 +42,51 @@ export class SliderExample extends React.Component {
     return (
       <div className="slickFlex">
         <Slider {...settings}>
-          <div className="slickItem" >
-            <h3>1</h3>
+          <div className="slickItem ">
+            <div className="slickItem-container slickItem-first">
+              <h1 className="slickItem-title">Binance × CryptoUniverse</h1>
+              <div className="slickItem-text">
+                Облачный майнинг уже<span>никогда не будет</span><span> прежним</span>
+              </div>
+              <button className="slickItem-btn">
+                <p>Начни майнинг сейчас</p>
+                <span className="CUicon-solid_interface-Caret-right"></span>
+              </button>
+            </div>
           </div>
           <div className="slickItem">
-            <h3>2</h3>
+            <div className="slickItem-container slickItem-sec">
+              <h1 className="slickItem-title">Подарки новым клиентам</h1>
+              <div className="slickItem-text">1 TH/s бесплатно<span>на 10 дней</span></div>
+              <button className="slickItem-btn">
+                <p>Попробовать бесплатно</p>
+                <span className="CUicon-solid_interface-Caret-right"></span>
+              </button>
+            </div>
           </div>
           <div className="slickItem">
-            <h3>3</h3>
+            <div className="slickItem-container slickItem-th">
+              <h1 className="slickItem-title">Хостинг оборудования</h1>
+              <div className="slickItem-text">
+                Скидка 20% на первые<span>6 месяцев</span>
+              </div>
+              <button className="slickItem-btn">
+                <p>Разместить со скидкой</p>
+                <span className="CUicon-solid_interface-Caret-right"></span>
+              </button>
+            </div>
           </div>
           <div className="slickItem">
-            <h3>4</h3>
+            <div className="slickItem-container slickItem-fth">
+              <h1 className="slickItem-title">Будущее майнинга</h1>
+              <div className="slickItem-text">
+                Antminer S19 в наличии<span>по лучшей цене</span>
+              </div>
+              <button className="slickItem-btn">
+                <p>Успеть забронировать</p>
+                <span className="CUicon-solid_interface-Caret-right"></span>
+              </button>
+            </div>
           </div>
         </Slider>
       </div>
