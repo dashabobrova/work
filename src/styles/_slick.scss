@@ -15,6 +15,9 @@
 }
  */
 
- .slickItem{
-     border: 2px solid red;
- }
+.slickItem:not:first-child {
+  border: 2px solid red;
+  height: 190px;
+  max-width: 258px;
+  margin: 10px 10px;
+}

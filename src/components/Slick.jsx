@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 export class SliderExample extends React.Component {
   render() {
     let settings = {
+        className: "slider variable-width",
       dots: false,
       arrows: false,
       infinite: false,
@@ -14,6 +15,7 @@ export class SliderExample extends React.Component {
       rows: 1,
       slidesToShow: 4,
       slidesToScroll: 1,
+
       responsive: [
         {
           breakpoint: 1040,
@@ -25,6 +27,7 @@ export class SliderExample extends React.Component {
             rows: 2,
             slidesToShow: 4,
             slidesToScroll: 1,
+            
           },
         },
         {
@@ -41,7 +44,7 @@ export class SliderExample extends React.Component {
     return (
       <div className="slickFlex">
         <Slider {...settings}>
-          <div className="slickItem">
+          <div className="slickItem" >
             <h3>1</h3>
           </div>
           <div className="slickItem">
