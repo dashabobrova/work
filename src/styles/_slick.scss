@@ -1,0 +1,16 @@
+.slickFlex {
+  width: 976px;
+  display: flex;
+  background-color: red;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.slickItem {
+  height: 140px;
+  min-width: 476px;
+  background-color: yellowgreen;
+  border: 2px solid red;
+}
+

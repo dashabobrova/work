@@ -5,7 +5,7 @@ import LTC from "../img/LTC.svg";
 import ETH from "../img/ETH.svg";
 import USDT from "../img/USDT.svg";
 import { SelectComponent } from "../components/SelectComponent";
-import SimpleSlider from "../components/Slick";
+import SimpleSlider, { SliderExample } from "../components/Slick";
 
 export const Dashboard = () => {
   const [val, setVal] = React.useState(1);
@@ -258,7 +258,11 @@ export const Dashboard = () => {
       </div>
     </div>
     <div className="importantUserEvents">
-      <SimpleSlider />
+      <div className="container">
+      <div className="importantUserEvents__slider">
+      <SliderExample />
+      </div>
+      </div>
     </div>
     </div>
   );
