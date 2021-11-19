@@ -29,7 +29,6 @@ export const Dashboard = () => {
                       <button className="block__header-btn ">
                         <p>Перейти в раздел</p>
                         <span className="CUicon-solid_interface-Caret-right btn__arrow"></span>
-                    
                       </button>
                     </div>
                     {/* /// */}
@@ -98,19 +97,21 @@ export const Dashboard = () => {
                     </div>
 
                     {/* Кнопки */}
-                    <div className="blueBlock__main-btns">
-                      <button className="dashboardBlueBtn">
-                        <p className='btntxt'>Пополнить</p>
-                        <span className="CUicon-solid_interface-Plus iconspan"></span>
-                      </button>
-                      <button className="dashboardBlueBtn">
-                        <p className='btntxt'>Вывести</p>
-                        <span className="CUicon-solid_files-Upload iconspan"></span>
-                      </button>
-                      <button className="dashboardBlueBtn">
-                        <p className='btntxt'>Обменять</p>
-                        <span className="CUicon-interface-Exchange iconspan"></span>
-                      </button>
+                    <div className="main__btns-container">
+                      <div className="blueBlock__main-btns">
+                        <button className="dashboardBlueBtn">
+                          <p className="btntxt">Пополнить</p>
+                          <span className="CUicon-solid_interface-Plus iconspan"></span>
+                        </button>
+                        <button className="dashboardBlueBtn">
+                          <p className="btntxt">Вывести</p>
+                          <span className="CUicon-solid_files-Upload iconspan"></span>
+                        </button>
+                        <button className="dashboardBlueBtn">
+                          <p className="btntxt">Обменять</p>
+                          <span className="CUicon-interface-Exchange iconspan"></span>
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -120,15 +121,17 @@ export const Dashboard = () => {
                       <p className="CUicon-general-Pulse block__header-icon">
                         <span>Статистика</span>
                       </p>
-                      <div className="block__header-select">
-                      <SelectComponent
-                        value={val}
-                        handleChange={handleChange}
-                        items={[
-                          { key: "В криптовалюте", value: 1 },
-                          { key: "В USD", value: 2 },
-                        ]}
-                      />
+                      <div className="main__btns-container">
+                        <div className="block__header-select">
+                          <SelectComponent
+                            value={val}
+                            handleChange={handleChange}
+                            items={[
+                              { key: "В криптовалюте", value: 1 },
+                              { key: "В USD", value: 2 },
+                            ]}
+                          />
+                        </div>
                       </div>
                     </div>
                     {/* /// НАЧИНКА ПРАВОГО БЛОКА */}
@@ -171,9 +174,9 @@ export const Dashboard = () => {
                             </div>
 
                             <div>
-                              <div className="big__leftContent-wrapper">
+                              <div className="big__leftContent-wrapper big__leftContent-sec">
                                 <div className="CUicon-general-Calendar big__leftContent-icon"></div>
-                                <div className="big__leftContent-text">
+                                <div className="big__leftContent-text ">
                                   добыто <span>за все время</span>
                                 </div>
                               </div>
@@ -188,6 +191,62 @@ export const Dashboard = () => {
                   </div>
                 </div>
               </div>
+              {/* Battery */}
+              <div className="blueBlock__small">
+                {/* контент кнопки */}
+                <div className="blueBlock__small-main">
+                  <div className="small__main-container">
+                    <div className="test1">
+                      <div className="small__main-left">
+                        <div className="CUicon-solid_status-Lightning-alt main__left-icon"></div>
+                        <div className="main__left-title">
+                          баланс оплаты <span>электроэнергии</span>
+                        </div>
+                        <div className="main__left-cost">$1,305.80</div>
+                        <div className="main__left-days">45 дней</div>
+                        <button className="main__left-BlueBtn left__btn-add">
+                          <p>Пополнить</p>
+                          <span className="CUicon-solid_interface-Plus iconspan"></span>
+                        </button>
+                      </div>
+
+                      <div className="main__left-band"></div>
+
+                      <div className="small__main-med">
+                        <div>
+                          <p className="right__small-title">Оплата в день</p>
+                          <p className="right__small-cost">$35.20 за 596 кВт</p>
+                        </div>
+                        <div>
+                          <p className="right__small-title">
+                            баланса хватит на
+                          </p>
+                          <p className="right__small-cost">37 дней</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="small__main-end">
+                      <button className="block__header-btn end__btn-go">
+                        <p>Перейти в раздел</p>
+                        <span className="CUicon-solid_interface-Caret-right btn__arrow"></span>
+                      </button>
+                      <div className="testbtns">
+                      <button className="main__left-BlueBtn end__btn-add">
+                        <p className="btntxt">Пополнить</p>
+                        <span className="CUicon-solid_interface-Plus iconspan"></span>
+                      </button>
+                      <button className="main__left-BlueBtn end__btn-settings">
+                        <p className="btntxt">Настройки</p>
+                        <span className="CUicon-interface-Settings-alt iconspan"></span>
+                      </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {/* контент кнопки */}
+                <div className="band"></div>
+              </div>
+              {/* Battery */}
             </div>
           </div>
         </div>

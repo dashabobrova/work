@@ -18,16 +18,17 @@ const useStyles = makeStyles(() => ({
       height: "32px",
       justifyContent: "center",
     },
-    "& .MuiSelect-select.MuiSelect-select": {
-      //paddingRight: "0px",
-    },
   },
   select: {
+    //backgroundColor: "red",
     width: "auto",
     paddingLeft: "12px",
     paddingRight: "29px !important",
     borderRadius: "16px",
     position: "relative",
+    '@media (max-width: 699px)' : {
+      paddingRight: "145px !important",
+    },
     "&:focus": {
       backgroundColor: "#F4F4F7",
       borderRadius: "24px",

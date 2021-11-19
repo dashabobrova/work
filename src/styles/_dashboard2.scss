@@ -4,7 +4,7 @@
 
 body {
   font-family: Montserrat;
-  background-color: #0e46c0;
+  //background-color: #0e46c0;
 }
 
 .iconspan {
@@ -58,7 +58,6 @@ body {
   display: flex;
   text-align: center;
   justify-content: center;
-  margin-left: 7px;
 }
 
 .block__header-btn p {
@@ -77,39 +76,33 @@ body {
   transition: 0.5s;
 }
 .container {
-  max-width: 1104px;
+  max-width: 1154px;
   margin: 0 auto;
 }
 
 .dashboard {
   width: 100%;
   margin: 0 auto;
-}
-
-.blueBlock {
-  //background-color: #0e46c0;
-  position: relative;
-  width: 100%;
-  //min-height: 594px;
-  height: 100%;
+  background-color: #0e46c0;
 }
 
 .blueBlock__content {
   position: absolute;
   width: 100%;
-  height: 100%;
+  background-color: #0e46c0;
 }
 
 .blueBlock__main {
-  padding: 0 15px;
+  padding: 0 25px;
+  margin-bottom: 32px;
 }
 
 .blueBlock__main-parent {
-  background-color: red;
+  background-color: #ffffff;
   border-radius: 20px;
   height: 74%;
   width: 100%;
-  top: 32px;
+  margin-top: 32px;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -140,7 +133,7 @@ body {
 .innerChildren {
   width: 100%;
   height: 100%;
-  background-color: orange;
+  //background-color: orange;
   margin: 0 auto;
   border-radius: 16px;
 }
@@ -148,7 +141,7 @@ body {
 .block__header {
   height: 32px;
   width: 100%;
-  background-color: rgb(182, 114, 114);
+  //background-color: rgb(182, 114, 114);
   flex-direction: row;
   display: flex;
   justify-content: space-between;
@@ -285,7 +278,7 @@ body {
 
 .blueBlock__main-btns {
   width: 95%;
-  background-color: rgb(0, 225, 255);
+  //background-color: rgb(0, 225, 255);
   display: flex;
   justify-content: space-between;
   margin-top: 16px;
@@ -300,7 +293,7 @@ body {
 .right__items {
   width: 100%;
   height: 100%;
-  background-color: rgb(155, 211, 155);
+  //background-color: rgb(155, 211, 155);
   margin-top: 20px;
 }
 
@@ -352,13 +345,17 @@ body {
 }
 
 .item__speed {
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 24px;
+  line-height: 32px;
+  /*  font-size: 16px;
+  line-height: 20px; */
+  font-weight: 800;
 }
 
 .item__speed-positionGrid {
   margin-top: 4px;
-  padding-left: 20px;
+  padding-left: 0px;
+  text-align: center;
 }
 .righttext-span {
   font-weight: bold;
@@ -402,7 +399,6 @@ body {
 }
 
 .select__icon {
-  /* position: absolute; */
   color: #0e46c0;
   width: 8px;
   height: 4px;
@@ -414,13 +410,14 @@ body {
 @media (max-width: 1040px) {
   .item__speed {
     font-size: 18px;
+    line-height: 24px;
   }
 
   .container {
-    max-width: 976px;
+    max-width: 1024px;
   }
   .blueBlock__main-parent {
-    max-width: 928px;
+    max-width: 976px;
   }
 
   .left-children {
@@ -428,29 +425,15 @@ body {
   }
 }
 
-@media (max-width: 1040px) {
-  .item__speed {
-    font-size: 18px;
-  }
-
-  .container {
-    max-width: 976px;
-  }
-  .blueBlock__main-parent {
-    max-width: 928px;
-  }
-
-  .left-children {
-    width: 369px;
-  }
-}
-
-//TODO: поправить у скорости и 12th отстпуы (не на однйо высоте)
-//TODO: спаны на "за..."
 //то же, что на 768
 @media (max-width: 980px) {
   .container {
     max-width: 736px;
+  }
+
+  .blueBlock__main {
+    padding: 0 16px;
+    margin-bottom: 24px;
   }
   .blueBlock__main-parent {
     max-width: 704px;
@@ -541,10 +524,6 @@ body {
 
 //690Ю тк текст 3 280,15 TH/s пескакивает на 3 строки
 @media (max-width: 699px) {
-  .blueBlock {
-    min-height: 870px;
-  }
-
   .blueBlock__main-parent {
     max-width: 1080px;
     flex-direction: column;
@@ -561,11 +540,6 @@ body {
   } */
 
   .innerChildren {
-    /* max-width: 666px;
-    margin: 0 auto;
-    height: 100%; */
-    width: 91%;
-    background-color: orange;
     margin-bottom: 12px;
     margin-top: 16px;
   }
@@ -580,7 +554,6 @@ body {
 
   .blueBlock__main-btns {
     width: 100%;
-    background-color: rgb(0, 225, 255);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -703,10 +676,6 @@ body {
     padding-left: 0px;
   }
 
-  .righttext-span {
-    margin-left: -21px; //TODO:
-  }
-
   .right__items-item {
     background-color: rgb(255, 255, 255);
     margin-top: 0px;
@@ -716,22 +685,19 @@ body {
     font-size: 18px;
     line-height: 24px;
     font-weight: 500;
+    margin-top: 1px;
+    text-align: left;
   }
-
-  .righttext {
-    margin-top: 13px;
-  }
-
   .right__items-item {
-    margin-top: 13px;
+    margin-top: 0px;
   }
 
   .big__leftContent-wrapper {
-    margin-top: 13px;
+    margin-top: 12px;
   }
 
   .block__header-select {
-    margin-top: 12px;
+    margin-top: 12px; //TODO: на макете будто меньше
   }
 
   .right__items {
@@ -747,7 +713,45 @@ body {
     padding-bottom: 16px;
     border-radius: 16px;
   }
-}
 
-@media (max-width: 480px) {
+  .small__wrapper {
+    padding: 0px 13px;
+  }
+
+  .innerChildren {
+    margin-top: 12px;
+  }
+  .item__text {
+    margin-top: 12px;
+  }
+
+  .select__icon {
+    margin-left: 230px;
+  }
+
+  .left_switcherBlock {
+    margin-left: 0px;
+    padding-left: 7px;
+  }
+  .main__btns-container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .block__header-icon {
+    padding-left: 12px;
+  }
+
+  .righttext-span {
+    margin-top: 4px;
+    margin-left: -23px;
+  }
+
+  .big__leftContent-wrapper {
+    margin-top: 23px;
+  }
+
+  .big__leftContent-sec {
+    margin-top: 13px;
+  }
 }
