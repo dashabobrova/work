@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: 29px;
-  width: 220px;
+  //width: 220px;
   margin: 0 auto;
   padding-top: 5px;
 }
@@ -30,7 +30,7 @@
 }
 .slickItem-container {
   //background-color: red;
-  width: 246px;
+  //width: 246px;
   padding-left: 12px;
   padding-top: 5px;
   height: 100%;
@@ -89,6 +89,10 @@
     margin-left: 24px;
   }
 
+  .slick-slide:first-child {
+
+    margin-left: 0px;
+  }
 @media (max-width: 1040px) {
   .slickItem {
     height: 140px;
