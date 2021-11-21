@@ -82,7 +82,7 @@
   border-radius: 16px;
   background: #ffffff;
   height: 190px;
-  max-width: 258px;
+  //max-width: 258px;
   margin-right: 28px;
 }
 
@@ -92,50 +92,27 @@
 
 @media (max-width: 1040px) {
   .slickItem {
-    //border: 2px solid red;
     height: 140px;
-    max-width: 476px;
     margin-right: 0px;
-    //margin-top: 20px;
   }
 
-  .slick-slider .slick-track,
-  .slick-slider .slick-list {
-    width: 976px !important;
-  }
+  .slick-track {min-width: 100%}
 
-  .slick-initialized .slick-slide {
-    width: 976px !important;
-  }
+  .slick-slide {min-width: 50% }
 
-  .slick-slider .slick-track,
-  .slick-slider .slick-list {
-    display: flex;
-  }
 }
 
 //уже как на 768
 @media (max-width: 980px) {
   .slickItem {
-    //border: 2px solid red;
     height: 140px;
-    max-width: 358px;
     margin-right: 0px;
   }
 
-  .slick-slider .slick-track,
-  .slick-slider .slick-list {
-    width: 736px !important;
-  }
+  .slick-track {min-width: 100%}
 
-  .slick-initialized .slick-slide {
-    width: 736px !important;
-  }
+  .slick-slide {min-width: 100% }
 
-  .slick-slider .slick-track,
-  .slick-slider .slick-list {
-    display: flex;
-  }
 }
 
 @media (max-width: 699px) {
