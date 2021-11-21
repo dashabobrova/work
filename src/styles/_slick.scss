@@ -9,25 +9,24 @@
   padding-top: 5px;
 }
 
-.slickItem-sec{
-    background-image: url("../img/SlickItemSec.png");
-    background-repeat: no-repeat;
-    background-position-y: bottom;
+.slickItem-sec {
+  background-image: url("../img/SlickItemSec.png");
+  background-repeat: no-repeat;
+  background-position-y: bottom;
 }
 
-.slickItem-th{
-    background-image: url("../img/SlickItemSecTh.png");
-    background-repeat: no-repeat;
-    background-position-y: bottom;
-    background-position-x: right;
+.slickItem-th {
+  background-image: url("../img/SlickItemSecTh.png");
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-position-x: right;
 }
 
-.slickItem-fth{
-    background-image: url("../img/SlickItemSecFth.png");
-    background-repeat: no-repeat;
-    background-position-y: bottom;
-    background-position-x: right;
-    
+.slickItem-fth {
+  background-image: url("../img/SlickItemSecFth.png");
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-position-x: right;
 }
 .slickItem-container {
   //background-color: red;
@@ -51,8 +50,8 @@
   color: #272727;
 }
 
-.slickItem-text span{
-    display: block;
+.slickItem-text span {
+  display: block;
 }
 
 .slickItem-btn {
@@ -70,25 +69,25 @@
   align-items: center;
 }
 
-.slickItem-btn span{
- width: 4px;
- height: 8px;
- padding-right: 12px;
-  }
-  
+.slickItem-btn span {
+  width: 4px;
+  height: 8px;
+  padding-right: 12px;
+}
+
 /////////////////////////////////////
 
 .slickItem {
   border-radius: 16px;
   background: #ffffff;
   height: 190px;
-  //max-width: 258px;
-  margin-right: 28px;
 }
 
-.slickItem:last-child {
-  margin-right: 0px;
-}
+
+.slick-slide {
+    max-width: 22%;
+    margin-left: 24px;
+  }
 
 @media (max-width: 1040px) {
   .slickItem {
@@ -96,10 +95,14 @@
     margin-right: 0px;
   }
 
-  .slick-track {min-width: 100%}
+  .slick-track {
+    min-width: 100%;
+  }
 
-  .slick-slide {min-width: 50% }
-
+  .slick-slide {
+    min-width: 47%;
+    margin-left: 24px;
+  }
 }
 
 //уже как на 768
@@ -109,11 +112,13 @@
     margin-right: 0px;
   }
 
-  .slick-track {min-width: 100%}
+  .slick-track {
+    min-width: initial;
+  }
 
-  .slick-slide {min-width: 100% }
-
+  .slick-slide {min-width: initial }
 }
 
 @media (max-width: 699px) {
+    .slick-slide {min-width: initial }
 }
