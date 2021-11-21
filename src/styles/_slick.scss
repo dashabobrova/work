@@ -4,36 +4,38 @@
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: 29px;
-  //width: 220px;
+  width: 220px;
   margin: 0 auto;
   padding-top: 5px;
 }
 
-.slickItem-sec {
-  background-image: url("../img/SlickItemSec.png");
-  background-repeat: no-repeat;
-  background-position-y: bottom;
+.slickItem-sec{
+    background-image: url("../img/SlickItemSec.png");
+    background-repeat: no-repeat;
+    background-position-y: bottom;
 }
 
-.slickItem-th {
-  background-image: url("../img/SlickItemSecTh.png");
-  background-repeat: no-repeat;
-  background-position-y: bottom;
-  background-position-x: right;
+.slickItem-th{
+    background-image: url("../img/SlickItemSecTh.png");
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: right;
 }
 
-.slickItem-fth {
-  background-image: url("../img/SlickItemSecFth.png");
-  background-repeat: no-repeat;
-  background-position-y: bottom;
-  background-position-x: right;
+.slickItem-fth{
+    background-image: url("../img/SlickItemSecFth.png");
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: right;
+    
 }
 .slickItem-container {
   //background-color: red;
-  //width: 246px;
+  width: 100%;
   padding-left: 12px;
   padding-top: 5px;
   height: 100%;
+  box-sizing: border-box;
 }
 
 .slickItem-title {
@@ -50,8 +52,8 @@
   color: #272727;
 }
 
-.slickItem-text span {
-  display: block;
+.slickItem-text span{
+    display: block;
 }
 
 .slickItem-btn {
@@ -69,58 +71,46 @@
   align-items: center;
 }
 
-.slickItem-btn span {
-  width: 4px;
-  height: 8px;
-  padding-right: 12px;
-}
-
+.slickItem-btn span{
+ width: 4px;
+ height: 8px;
+ padding-right: 12px;
+  }
+  
 /////////////////////////////////////
 
 .slickItem {
   border-radius: 16px;
   background: #ffffff;
   height: 190px;
+  max-width: 258px;
+  margin-right: 28px;
 }
 
+.slickItem:last-child {
+  margin-right: 0px;
+}
 
-.slick-slide {
-    max-width: 22%;
-    margin-left: 24px;
-  }
-
-  .slick-slide:first-child {
-
-    margin-left: 0px;
-  }
 @media (max-width: 1040px) {
   .slickItem {
+    //border: 2px solid red;
     height: 140px;
+    max-width: 476px;
     margin-right: 0px;
+    //margin-top: 20px;
   }
 
-  .slick-track {
-    min-width: 100%;
+  .slick-track{
+    min-width: 100%
   }
 
   .slick-slide {
-    min-width: 47%;
-    margin-left: 24px;
+    min-width: 50%
   }
 }
 
 //уже как на 768
 @media (max-width: 980px) {
-  .slickItem {
-    height: 140px;
-    //margin-right: 0px;
-  }
-
- /*  .slick-track {
-    min-width: 100%;
-  } */
-
-  //.slick-slide {min-width: initial }
 }
 
 @media (max-width: 699px) {
