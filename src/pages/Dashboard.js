@@ -266,8 +266,9 @@ export const Dashboard = () => {
       </div>
       <div className="importantUserEvents">
         <div className="container">
+        <div className="importantUserEvents__container">
           <ul className="importantUserEvents__list">
-            <li>
+          <li>
               <div className="importantUserEvents__list-item">
                 <div className="item__firstgroup">
                   <div className="item__left">
@@ -280,7 +281,7 @@ export const Dashboard = () => {
                   </div>
                 </div>
                 <div>
-                  <div className="item__end yellow">
+                  <div className="importantUserEvents__item__end yellow">
                     <p className="CUicon-solid_general-Clock item__end-icon"></p>
                     <p className="item__end-text">подтвержден 2/4</p>
                   </div>
@@ -299,7 +300,7 @@ export const Dashboard = () => {
                   </div>
                 </div>
                 <div>
-                  <div className="item__end yellow">
+                  <div className="importantUserEvents__item__end yellow">
                     <p className="CUicon-solid_general-Clock item__end-icon"></p>
                     <p className="item__end-text">подтвержден 0/4</p>
                   </div>
@@ -314,11 +315,13 @@ export const Dashboard = () => {
                     <p className="item__left-text">Профиль</p>
                   </div>
                   <div className="item__med">
+                    <p>
                   Электронная почта не подтверждена. Пройдите по ссылке из отправленного вам письма.
+                  </p>
                   </div>
                 </div>
                 <div>
-                  <div className="item__end blueEnd">
+                  <div className="importantUserEvents__item__end blueEnd">
                     <p className="CUicon-comm-Envelope item__end-icon"></p>
                     <p className="item__end-text">отправить еще раз</p>
                   </div>
@@ -337,7 +340,7 @@ export const Dashboard = () => {
                   </div>
                 </div>
                 <div>
-                  <div className="item__end blueEnd">
+                  <div className="importantUserEvents__item__end blueEnd">
                     <p className="CUicon-files-File-user item__end-icon"></p>
                     <p className="item__end-text">Верификация</p>
                   </div>
@@ -345,6 +348,7 @@ export const Dashboard = () => {
               </div>
             </li>
           </ul>
+        </div>
         </div>
       </div>
       <div className="forYou">

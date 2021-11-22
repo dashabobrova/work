@@ -11,7 +11,7 @@ export class SliderExample extends React.Component {
       arrows: false,
       infinite: false,
       speed: 500,
-      rows: 1,
+      //rows: 1,
       slidesToShow: 4,
       slidesToScroll: 1,
 
@@ -23,7 +23,7 @@ export class SliderExample extends React.Component {
             arrows: false,
             infinite: false,
             speed: 500,
-            rows: 2,
+            //rows: 2,
             slidesToShow: 4,
             slidesToScroll: 1,
           },
@@ -31,10 +31,11 @@ export class SliderExample extends React.Component {
         {
           breakpoint: 699,
           settings: {
-            rows: 1,
+            //rows: 1,
             slidesToShow: 1,
             slidesToScroll: 1,
             dots: true,
+            dotsClass: "slick-dots slick-thumb",
           },
         },
       ],
@@ -46,7 +47,7 @@ export class SliderExample extends React.Component {
             <div className="slickItem-container slickItem-first">
               <h1 className="slickItem-title">Binance × CryptoUniverse</h1>
               <div className="slickItem-text">
-                Облачный майнинг уже<span>никогда не будет</span><span> прежним</span>
+                Облачный майнинг уже никогда не будет прежним
               </div>
               <button className="slickItem-btn">
                 <p>Начни майнинг сейчас</p>
@@ -57,7 +58,7 @@ export class SliderExample extends React.Component {
           <div className="slickItem">
             <div className="slickItem-container slickItem-sec">
               <h1 className="slickItem-title">Подарки новым клиентам</h1>
-              <div className="slickItem-text">1 TH/s бесплатно<span>на 10 дней</span></div>
+              <div className="slickItem-text">1 TH/s бесплатнона 10 дней</div>
               <button className="slickItem-btn">
                 <p>Попробовать бесплатно</p>
                 <span className="CUicon-solid_interface-Caret-right"></span>
@@ -68,7 +69,7 @@ export class SliderExample extends React.Component {
             <div className="slickItem-container slickItem-th">
               <h1 className="slickItem-title">Хостинг оборудования</h1>
               <div className="slickItem-text">
-                Скидка 20% на первые<span>6 месяцев</span>
+                Скидка 20% на первые 6 месяцев
               </div>
               <button className="slickItem-btn">
                 <p>Разместить со скидкой</p>
@@ -80,7 +81,7 @@ export class SliderExample extends React.Component {
             <div className="slickItem-container slickItem-fth">
               <h1 className="slickItem-title">Будущее майнинга</h1>
               <div className="slickItem-text">
-                Antminer S19 в наличии<span>по лучшей цене</span>
+                Antminer S19 в наличии по лучшей цене
               </div>
               <button className="slickItem-btn">
                 <p>Успеть забронировать</p>

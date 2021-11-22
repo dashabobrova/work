@@ -39,6 +39,7 @@
 
 .slickFlex {
   margin-top: 24px;
+  padding-bottom: 32px;
 }
 @media (max-width: 1040px) {
   .slick__container {
@@ -55,5 +56,10 @@
 @media (max-width: 699px) {
   .slick__container {
     width: 288px;
+  }
+
+  .slickFlex {
+    margin-top: 0px;
+    padding-bottom: 32px;
   }
 }

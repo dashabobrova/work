@@ -9,25 +9,24 @@
   padding-top: 5px;
 }
 
-.slickItem-sec{
-    background-image: url("../img/SlickItemSec.png");
-    background-repeat: no-repeat;
-    background-position-y: bottom;
+.slickItem-sec {
+  background-image: url("../img/SlickItemSec.png");
+  background-repeat: no-repeat;
+  background-position-x: right;
 }
 
-.slickItem-th{
-    background-image: url("../img/SlickItemSecTh.png");
-    background-repeat: no-repeat;
-    background-position-y: bottom;
-    background-position-x: right;
+.slickItem-th {
+  background-image: url("../img/SlickItemSecTh.png");
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-position-x: right;
 }
 
-.slickItem-fth{
-    background-image: url("../img/SlickItemSecFth.png");
-    background-repeat: no-repeat;
-    background-position-y: bottom;
-    background-position-x: right;
-    
+.slickItem-fth {
+  background-image: url("../img/SlickItemSecFth.png");
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-position-x: right;
 }
 .slickItem-container {
   //background-color: red;
@@ -52,10 +51,6 @@
   color: #272727;
 }
 
-.slickItem-text span{
-    display: block;
-}
-
 .slickItem-btn {
   position: absolute;
   bottom: 12px;
@@ -71,12 +66,12 @@
   align-items: center;
 }
 
-.slickItem-btn span{
- width: 4px;
- height: 8px;
- padding-right: 12px;
-  }
-  
+.slickItem-btn span {
+  width: 4px;
+  height: 8px;
+  padding-right: 12px;
+}
+
 /////////////////////////////////////
 
 .slickItem {
@@ -93,26 +88,57 @@
 
 @media (max-width: 1040px) {
   .slickItem {
-    //border: 2px solid red;
     height: 140px;
     max-width: 476px;
-    margin-right: 0px;
-    //margin-top: 20px;
+    margin-top: 16px;
   }
 
-  .slick-track{
-    min-width: 100%
+  .slick-track {
+    min-width: 50%;
+    display: flex; 
+    flex-wrap: wrap
   }
 
   .slick-slide {
-    min-width: 50%
+    min-width: 50%;
   }
+
+  .slickItem-btn {
+    position: relative;
+    margin-top: 40px;
+   /*  bottom: 12px;
+    height: 32px;
+    border-radius: 16px;
+    background: #e5eaf1;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    color: #272727;
+    border: none;
+    display: flex;
+    align-items: center; */
+  }
+  
+
 }
 
 //уже как на 768
 @media (max-width: 980px) {
+  .slick-slide {
+    min-width: 50%;
+  }
+
+  .slickItem {
+    max-width: 358px;
+  }
 }
 
 @media (max-width: 699px) {
-    .slick-slide {min-width: initial }
+  .slick-slide {
+    min-width: initial;
+  }
 }
+
+//TODO: Куда кнопки деваются блять?
+//перенос шрифта не за счет спанов, а за счет ширины блока (чтобы порм было на адаптиве)
+
