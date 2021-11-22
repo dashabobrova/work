@@ -79,14 +79,13 @@
   background: #ffffff;
   height: 190px;
   max-width: 258px;
-  margin-right: 28px;
 }
 
 .slickItem:last-child {
   margin-right: 0px;
 }
 
-@media (max-width: 1040px) {
+@media (max-width: 1135px) {
   .slickItem {
     height: 140px;
     max-width: 476px;
@@ -95,8 +94,8 @@
 
   .slick-track {
     min-width: 50%;
-    display: flex; 
-    flex-wrap: wrap
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .slick-slide {
@@ -106,20 +105,7 @@
   .slickItem-btn {
     position: relative;
     margin-top: 40px;
-   /*  bottom: 12px;
-    height: 32px;
-    border-radius: 16px;
-    background: #e5eaf1;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 18px;
-    color: #272727;
-    border: none;
-    display: flex;
-    align-items: center; */
   }
-  
-
 }
 
 //уже как на 768
@@ -133,12 +119,49 @@
   }
 }
 
-@media (max-width: 699px) {
+@media (max-width: 760px) {
   .slick-slide {
     min-width: initial;
+    margin: 0 auto;
   }
 }
 
 //TODO: Куда кнопки деваются блять?
 //перенос шрифта не за счет спанов, а за счет ширины блока (чтобы порм было на адаптиве)
 
+///dots
+.button__bar {
+  display: inline;
+  margin: auto;
+  padding: 0;
+  width: 88px;
+  margin-top: 20px;
+}
+
+.button__bar li {
+  vertical-align: middle;
+  list-style: none;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 4px;
+  align-self: center;
+  padding: 0;
+}
+
+.button__bar li button {
+  border: none;
+  background: #6a96f6;
+  color: transparent;
+  cursor: pointer;
+  display: block;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+}
+
+.button__bar li.slick-active button {
+  background-color: #0e46c0;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+}

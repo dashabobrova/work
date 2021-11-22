@@ -16,8 +16,8 @@ export class SliderExample extends React.Component {
       slidesToScroll: 1,
 
       responsive: [
-        {
-          breakpoint: 1040,
+       /*  {
+          breakpoint: 1135,
           settings: {
             dots: false,
             arrows: false,
@@ -27,15 +27,15 @@ export class SliderExample extends React.Component {
             slidesToShow: 4,
             slidesToScroll: 1,
           },
-        },
+        }, */
         {
-          breakpoint: 699,
+          breakpoint: 760,
           settings: {
             //rows: 1,
             slidesToShow: 1,
             slidesToScroll: 1,
             dots: true,
-            dotsClass: "slick-dots slick-thumb",
+            dotsClass: "button__bar",
           },
         },
       ],

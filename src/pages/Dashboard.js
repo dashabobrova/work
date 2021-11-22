@@ -266,101 +266,112 @@ export const Dashboard = () => {
       </div>
       <div className="importantUserEvents">
         <div className="container">
-        <div className="importantUserEvents__container">
-          <ul className="importantUserEvents__list">
-          <li>
-              <div className="importantUserEvents__list-item">
-                <div className="item__firstgroup">
+          <div className="importantUserEvents__container">
+            <ul className="importantUserEvents__list">
+              <li>
+                <div className="importantUserEvents__list-item">
+                  {/* <div className="item__firstgroup"> */}
                   <div className="item__left">
-                    <p className="CUicon-files-Upload item__left-icon"></p>
-                    <p className="item__left-text">Вывод средств</p>
+                    <div className="CUicon-files-Upload item__left-icon"></div>
+                    <div className="item__left-text">Вывод средств</div>
                   </div>
-                  <div className="item__med">
-                    Вывод 0.0050000 BTC на кошелёк
-                    1njrRcKQtfjjLuQxFYCeMXcth77m5TAYo
+                  <div className="item__firstgroup">
+                    <div className="importantUserEvents__item__med">
+                      Вывод 0.0050000 BTC на кошелёк
+                      1njrRcKQtfjjLuQxFYCeMXcth77m5TAYo
+                    </div>
+                    {/* </div> */}
+                    <div>
+                      <div className="importantUserEvents__item__end yellow">
+                        <div className="CUicon-solid_general-Clock item__end-icon"></div>
+                        <div className="item__end-text">подтвержден 2/4</div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div>
-                  <div className="importantUserEvents__item__end yellow">
-                    <p className="CUicon-solid_general-Clock item__end-icon"></p>
-                    <p className="item__end-text">подтвержден 2/4</p>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div className="importantUserEvents__list-item">
-                <div className="item__firstgroup">
+              </li>
+              <li>
+                <div className="importantUserEvents__list-item">
+                  {/* <div className="item__firstgroup"> */}
                   <div className="item__left">
                     <p className="CUicon-solid_interface-Plus item__left-icon"></p>
                     <p className="item__left-text">Пополнение</p>
                   </div>
-                  <div className="item__med">
-                  Пополнение баланса BTC на 0.00003000 BTC
+                  <div className="item__firstgroup">
+                    <div className="importantUserEvents__item__med">
+                      Пополнение баланса BTC на 0.00003000 BTC
+                    </div>
+                    {/* </div> */}
+                    <div>
+                      <div className="importantUserEvents__item__end yellow">
+                        <p className="CUicon-solid_general-Clock item__end-icon"></p>
+                        <p className="item__end-text">подтвержден 0/4</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div>
-                  <div className="importantUserEvents__item__end yellow">
-                    <p className="CUicon-solid_general-Clock item__end-icon"></p>
-                    <p className="item__end-text">подтвержден 0/4</p>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div className="importantUserEvents__list-item">
-                <div className="item__firstgroup">
+              </li>
+              <li>
+                <div className="importantUserEvents__list-item">
+                  {/* <div className="item__firstgroup"> */}
                   <div className="item__left">
                     <p className=" CUicon-files-File-user item__left-icon"></p>
                     <p className="item__left-text">Профиль</p>
                   </div>
-                  <div className="item__med">
-                    <p>
-                  Электронная почта не подтверждена. Пройдите по ссылке из отправленного вам письма.
-                  </p>
+                  <div className="item__firstgroup">
+                    <div className="importantUserEvents__item__med">
+                      Электронная почта не подтверждена. Пройдите по ссылке из
+                      отправленного вам письма.
+                    </div>
+                    {/* </div> */}
+                    <div>
+                      <div className="importantUserEvents__item__end blueEnd">
+                        <p className="CUicon-comm-Envelope item__end-icon"></p>
+                        <p className="item__end-text">отправить еще раз</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div>
-                  <div className="importantUserEvents__item__end blueEnd">
-                    <p className="CUicon-comm-Envelope item__end-icon"></p>
-                    <p className="item__end-text">отправить еще раз</p>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div className="importantUserEvents__list-item">
-                <div className="item__firstgroup">
+              </li>
+              <li>
+                <div className="importantUserEvents__list-item">
+                  {/* <div className="item__firstgroup"> */}
                   <div className="item__left">
                     <p className=" CUicon-files-File-user item__left-icon"></p>
                     <p className="item__left-text">Профиль</p>
                   </div>
-                  <div className="item__med">
-                  Пройдите верификацию, чтобы увеличить лимит на операции
+                  <div className="item__firstgroup">
+                    <div className="importantUserEvents__item__med">
+                      Пройдите верификацию, чтобы увеличить лимит на операции
+                    </div>
+                    {/* </div> */}
+                    <div>
+                      <div className="importantUserEvents__item__end blueEnd">
+                        <p className="CUicon-files-File-user item__end-icon"></p>
+                        <p className="item__end-text">Верификация</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div>
-                  <div className="importantUserEvents__item__end blueEnd">
-                    <p className="CUicon-files-File-user item__end-icon"></p>
-                    <p className="item__end-text">Верификация</p>
-                  </div>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <div className="forYou">
         <div className="container">
-          <div className="slick">
-            <div className="slick-wrapper">
-              <div className="slick__container">
-                <div className="forYou__header">
-                  <div className="CUicon-solid_status-Fire forYou__header-icon"></div>
-                  <div className="forYou__header-text">Для вас</div>
+          <div className="importantUserEvents__container">
+          <div className="forYou__header">
+            <div className="CUicon-solid_status-Fire forYou__header-icon"></div>
+            <div className="forYou__header-text">Для вас</div>
+          </div>
+          </div>
+          <div className="importantUserEvents__container">
+            <div className="slick">
+              <div className="slick-wrapper">
+                <div className="slick__container">
+                  <SliderExample />
                 </div>
-                <SliderExample />
               </div>
             </div>
           </div>

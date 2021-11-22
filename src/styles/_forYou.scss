@@ -3,14 +3,14 @@
   //height: 500px;
   //background-color: rgb(165, 165, 165);
   padding-top: 32px;
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
   margin: 0;
 }
 
 .slick-wrapper {
   margin: 0 auto;
   //width: 100px;
-  background-color: yellow;
+  //background-color: yellow;
 }
 
 .forYou__header {
@@ -38,8 +38,7 @@
 }
 
 .slickFlex {
-  margin-top: 24px;
-  padding-bottom: 32px;
+  margin-top: 12px;
 }
 @media (max-width: 1040px) {
   .slick__container {
@@ -51,15 +50,26 @@
   .slick__container {
     width: 736px;
   }
+
+  .forYou__header-text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .forYou__header-icon {
+    height: 19px;
+    width: 13px;
+    font-size: 20px;
+    padding-top: 3px;
+  }
 }
 
-@media (max-width: 699px) {
+@media (max-width: 760px) {
   .slick__container {
     width: 288px;
   }
 
   .slickFlex {
     margin-top: 0px;
-    padding-bottom: 32px;
   }
 }
